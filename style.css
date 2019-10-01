@@ -140,6 +140,12 @@ font-weight: bold;
 	
 	      }
 
+.caixa{
+	margin-left: 3px;
+	margin-top:20px;
+	width: 690px;
+	height: 50px;
+}
 .timeline{
 margin-left: 295px;
 margin-top: -6px;
