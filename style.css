@@ -10,6 +10,10 @@ a{
 	color: black;
 }
 
+body{
+	background-color: #E1E8ED;
+}
+
 .ladoesquerdo{
 width: 300px; 
 height: 680px;
