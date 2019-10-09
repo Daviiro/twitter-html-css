@@ -4,69 +4,94 @@
    <head>
       <title> Twitter </title>
       <link href="favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="teste.css">
    </head>
 
 
 
 
 
-      <div class="ladoesquerdo">
-
-         <div class="fixo">
-
-            <div id="logo">
-               <img width="34px" height="28px" src="twitter_logo.png" />
-            </div>
-
-            <div class="menu">
-               <div id="home"><a href="url">Home</a> </div>
-               <div id="explore"><a href="url">Explore</a> </div>
-               <div id="noti"><a href="url">Notifications</a> </div>
-               <div id="msg"><a href="url">Messages</a> </div>
-               <div id="book"><a href="url">Bookmarks</a> </div>
-               <div id="lis"><a href="url">Lists</a> </div>
-               <div id="profile"><a href="url">Profile</a> </div>
-               <div id="moar"><a href="url">More</a> </div>
-            </div>
-
-            <div id="botao">
-               <button class="bt" onclick="alert('tuitado')">Tweet</button>
-            </div>
-
-            <div class="iconemenu">
-               <div> <img src="icones\homepic.png" /> </div>
-               <div id="iconebaixo">
-                  <div> <img src="icones\explorarpic.png" /> </div>
-                  <div> <img src="icones\notificacaopic.png" /> </div>
-                  <div> <img src="icones\msgpic.png" /> </div>
-                  <div> <img id="ajeitaitens" src="icones\itenspic.png" /> </div>
-                  <div> <img id="ajeitalist" src="icones\listapic.png" /> </div>
-                  <div> </div>
-                  <div> <img id="ajeitamore" src="icones\moarpic.png" /> </div>
-               </div>
-            </div>
+   <div class="ladoesquerdo">
 
 
+      <div class="menu">
+         <div id="logo" class="item"><img width="34px" height="28px" src="twitter_logo.png" /></div>
+         <div id="home" class="item"><a href="url"><img width="34px" height="28px" src="icones\homepic.png" />Home</a> </div>
+         <div id="explore" class="item"><a href="url"><img src="icones\explorarpic.png" />Explore</a> </div>
+         <div id="noti" class="item"><a href="url"><img src="icones\notificacaopic.png" />Notifications</a> </div>
+         <div id="msg" class="item"><a href="url"><img src="icones\msgpic.png" /> Messages</a> </div>
+         <div id="book" class="item"><a href="url"><img id="ajeitaitens" src="icones\itenspic.png" />Bookmarks</a>
          </div>
-      </div>
-      <div class="meiohome">
-         <div id="homee" <p>Home</p>
-         </div>
+         <div id="lis" class="item"><a href="url"><img id="ajeitalist" src="icones\listapic.png" />Lists</a> </div>
+         <div id="profile" class="item"><a href="url">Profile</a> </div>
+         <div id="moar" class="item"><a href="url"><img id="ajeitamore" src="icones\moarpic.png" />More</a> </div>
       </div>
 
-      <div class="happening">
-         <input class="caixa" type="text" name="nome" placeholder="O que est&aacute acontecendo?" minlength="5"
+      <div id="botao">
+         <button class="bt" onclick="alert('tuitado')">Tweet</button>
+      </div>
+
+   </div>
+
+
+   <div class="meiohome">
+
+      <div id="homee">
+         <span id="inicio">
+            <p>Home</p>
+         </span>
+      </div>
+
+      <div id="happening">
+         <input id="caixa" type="text" name="nome" placeholder="O que est&aacute acontecendo?" minlength="5"
             maxlength="30" pattern="[a-zA-Z]">
       </div>
-
-      <div class="timeline">
-         <p>aqui eh a timeline</p>
+      <div id="timeline">
+         <div class="postagem">
+            <div class="fotoperfil"></div>
+            <div class="conteudo">
+               <p>
+                  <b>Brie</b> <span class="user">@Skch - 3min</span> <br>
+                  <span class="legenda">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum impedit
+                     quaerat iusto ullam. Iusto dolorem maiores, ipsum accusantium odio provident neque dolorum natus
+                     corporis quia? Cupiditate, cumque. Cumque, doloribus vero!</span>
+               </p>
+               <iframe width="100%" height="315" src="https://www.youtube.com/embed/Rmr9M6qHKak" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
       </div>
 
+   </div>
 
-      <div class="ladodireito">
+
+   <div class="ladodireito">
+      <div class="direito">
+         <div id="busca">
+
+            <input id="caixaB" type="text" name="nome" placeholder="Buscar no Twitter" pattern="[a-zA-Z]">
+         </div>
+
+         <div id="assuntos">
+            <div id="astit"><span>Assuntos para você</span></div>
+            <button class="bta">Assunto1 </button>
+            <button class="bta">Assunto2 </button>
+            <button class="bta">Assunto3 </button>
+            <button class="bta">Assunto4 </button>
+            <button id="more">Mostrar mais</button>
+         </div>
+
+         <div id="seguir">
+            <div id="setit"><span>Quem seguir</span></div>
+            <button class="bta">Pessoa1 </button>
+            <button class="bta">Pessoa2 </button>
+            <button class="bta">Pessoa3 </button>
+            <button id="more">Mostrar mais</button>
+         </div>
       </div>
+
+   </div>
    </body>
 
 </html>
