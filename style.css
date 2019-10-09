@@ -127,10 +127,11 @@ background:linear-gradient(to bottom, #1DA1F2 1%, #ffffff 100%);
 position: fixed;
 margin-left: 295px;
 margin-top:-690px;
-width: 700px; 
+width: 650px; 
 height: 60px;
 background: #FFFFFF;
 }
+
 #homee{
 margin-left: 10px;
 padding-top: 20px;
@@ -140,28 +141,54 @@ font-weight: bold;
 }
 
 .happening{
-	width: 700px;
+	width: 650px;
 	height: 113px;
 	margin-left: 295px;
 	margin-top:-646px;
 	background: #FFFFFF;
-	
-	      }
+}
 
 .caixa{
 	margin-left: 3px;
 	margin-top:20px;
-	width: 690px;
+	width: 640px;
 	height: 50px;
 }
 .timeline{
 margin-left: 295px;
 margin-top: -6px;
-width: 700px; 
+width: 650px; 
 height: 1000px;
 background: #FFFFFF;
 }
 
 
+.ladodireito{
+margin-left: 950px;
+margin-top: -1140px;
+}
+
+#divBusca{
+  background-color:#E1E8ED;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+}
+ 
+#txtBusca{
+  float:left;
+  color: #AAB8C2;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+#btnBusca{
+  width: 10%;
+}
 
 
