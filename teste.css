@@ -1,0 +1,264 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: #E1E8ED;
+	display: grid;
+    grid-template-areas: "esquerda meiohome direita";
+    grid-template-columns: 300px 598px auto;
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.3125;
+    margin-bottom: 10px;
+}
+
+
+.ladoesquerdo{
+    grid-area: esquerda; 
+    background-color: #FFFFFF;
+    height: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(230, 236, 240);
+    position: fixed;
+    width: 300px;
+}
+
+.meiohome{
+    display: flex;
+    flex-direction: column;
+    grid-area: meiohome;
+    background-color: rgb(230, 236, 240);
+    height: 10000px;
+}
+
+.menu{
+	margin-left: 50px;
+	font-size: 18px;
+	font-family: Arial;
+	font-weight: bold;
+
+}
+
+.ladodireito{
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(230, 236, 240);
+    grid-area: direita; 
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.bta{
+    background-color: rgba(0, 0, 0, 0);
+    border:solid;
+    border-width: 1px;
+    border-color: rgb(230, 236, 240);
+    height: 110px;
+    cursor:pointer;
+}
+
+.bta:hover, #more:hover{
+    background-color: rgb(230, 236, 240);
+}
+
+.direito{
+    position: relative;
+}
+
+.fotoperfil{
+    margin: 0px 5px;
+    width: 49px;
+}
+
+.postagem{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: rgb(230, 236, 240);
+}
+
+.user{
+    color: rgb(101, 119, 134);
+}
+
+.conteudo{
+    margin: 0px 5px;
+    padding: 0px 0px 10px;
+}
+
+#homee{
+    grid-area: meiohome;
+    position: fixed;
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 598px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(230, 236, 240);
+    order: 1;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#happening{
+    margin-top: 50px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-bottom-color: rgb(230, 236, 240);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #FFFFFF;
+}
+
+
+#caixa{
+    height: 39px;
+    width: 404px;
+    border: none;
+    background-color: rgba(230, 236, 240,0);
+    font-size: 15px;
+    color: rgb(101, 119, 134);
+    text-align: left;
+
+}
+
+.item{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#timeline{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    height: 100%;
+}
+
+#botao{
+	margin-left: 0px;
+	margin-top: 8px;
+}
+.bt {
+	height:50px;
+	width:215px;
+    margin-top: 8px;
+    margin-left:20px;
+    border:1px solid #1DA1F2;
+    border-radius:30px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Arial;
+    font-weight:bold;   
+    font-size:18px;
+    padding:6px 10px;
+    text-decoration:none;
+    border-color:#1DA1F2;
+    background:#1DA1F2;
+    box-shadow:inset 0px 1px 0px 0px #1DA1F2;
+    color:#fff;
+    text-shadow:0px 1px 0px #1DA1F2;
+
+}
+
+.bt:hover {
+    background:linear-gradient(to bottom, #1DA1F2 1%, #ffffff 100%);
+}
+
+#logo{
+    padding: 15px;
+}
+
+#busca{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 39px;
+    width: 348px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: rgb(230, 236, 240);
+    background-color: rgb(230, 236, 240);
+    font-size: 15px;
+    color: rgb(101, 119, 134);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#assuntos{
+    height: 529px;
+    width: 348px;
+    border-radius: 14px;
+    background-color: rgb(245, 248, 250);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#caixaB{
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#inicio{
+    padding: 15px;
+}
+
+
+#astit, #setit{
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+#more{
+    color: rgba(29,161,242,1.00);
+    padding: 10px 15px 0px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    text-align: left;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    cursor:pointer;
+}
+
+#seguir{
+    height: 400px;
+    width: 348px;
+    border-radius: 14px;
+    background-color: rgb(245, 248, 250);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
