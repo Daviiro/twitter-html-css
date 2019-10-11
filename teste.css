@@ -24,6 +24,17 @@ p{
     margin-bottom: 10px;
 }
 
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+ }
 
 .ladoesquerdo{
     grid-area: esquerda; 
@@ -52,8 +63,9 @@ p{
 }
 
 .ladodireito{
-    border: solid;
-    border-width: 1px;
+    border-left: solid;
+    border-left-width: 1px;
+    border-top: none;
     border-color: rgb(230, 236, 240);
     grid-area: direita; 
     background-color: #FFFFFF;
@@ -103,10 +115,52 @@ p{
     padding: 0px 0px 10px;
 }
 
+.bt {
+    margin-top: 8px;
+    margin-left:40px;
+    border:1px solid #1DA1F2;
+    border-radius:30px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Arial;
+    font-weight:bold;   
+    
+    padding:6px 10px;
+    text-decoration:none;
+    border-color:#1DA1F2;
+    background:#1DA1F2;
+    box-shadow:inset 0px 1px 0px 0px #1DA1F2;
+    color:#fff;
+    text-shadow:0px 1px 0px #1DA1F2;
+
+}
+
+.btgrande{
+    height:50px;
+    width:215px;
+    font-size:18px;
+}
+
+.btpequeno{
+    font-size:15px;
+    margin-right: 5px;
+
+}
+
+.bt:hover {
+    background:linear-gradient(to bottom, #1DA1F2 1%, #ffffff 100%);
+}
+
+.item{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
 #homee{
     grid-area: meiohome;
     position: fixed;
-    width: 598px;
+    width: 597px;
     border: solid;
     border-width: 1px;
     border-color: rgb(230, 236, 240);
@@ -125,8 +179,8 @@ p{
 }
 
 #izaya{
-	margin-top: -30px;
-    margin-left: -430px;
+	margin-left: 10px;
+    margin-bottom: 30px;
 }
 
 #happening{
@@ -135,10 +189,10 @@ p{
     border-width: 1px;
     border-bottom-color: rgb(230, 236, 240);
     width: 100%;
-    height: 90px;
+    height: 110px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color:  #FFFFFF;
 }
 
@@ -152,22 +206,14 @@ p{
     color: rgb(101, 119, 134);
     text-align: left;
 	margin-top: -40px;
-	margin-left: 0px;
-
+	margin-left: 15px;
+    
 }
 
 #tweetpic{
 	margin-top: 45px;
     margin-left: -413px;
 }
-
-.item{
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
 
 #timeline{
     background-color: #FFFFFF;
@@ -179,31 +225,6 @@ p{
 	margin-left: 0px;
 	margin-top: 8px;
 }
-.bt {
-	height:50px;
-	width:215px;
-    margin-top: 8px;
-    margin-left:40px;
-    border:1px solid #1DA1F2;
-    border-radius:30px;
-    display:inline-block;
-    cursor:pointer;
-    font-family:Arial;
-    font-weight:bold;   
-    font-size:18px;
-    padding:6px 10px;
-    text-decoration:none;
-    border-color:#1DA1F2;
-    background:#1DA1F2;
-    box-shadow:inset 0px 1px 0px 0px #1DA1F2;
-    color:#fff;
-    text-shadow:0px 1px 0px #1DA1F2;
-
-}
-
-.bt:hover {
-    background:linear-gradient(to bottom, #1DA1F2 1%, #ffffff 100%);
-}
 
 #logo{
     padding: 15px;
@@ -212,8 +233,6 @@ p{
     padding: 10px;
 }
 #busca{
-    margin-top: 5px;
-    margin-bottom: 10px;
     height: 39px;
     width: 348px;
     border: solid;
@@ -226,6 +245,8 @@ p{
     text-align: left;
     display: flex;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 
 #assuntos{
@@ -236,6 +257,7 @@ p{
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 #caixaB{
@@ -243,6 +265,7 @@ p{
     border:none;
     padding: 10px;
     font-size: 15px;
+
 }
 
 #inicio{
@@ -263,13 +286,15 @@ p{
 
 #more{
     color: rgba(29,161,242,1.00);
-    padding: 10px 15px 0px 15px;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0);
     border:none;
     text-align: left;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
     cursor:pointer;
+    height: 10%;
+    position: relative;
 }
 
 #seguir{
@@ -282,3 +307,26 @@ p{
     flex-direction: column;
 }
 
+#acontecendo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#bot{
+    margin-top: 35px;
+    margin-right: 7px;
+}
+
+#buscafixa{
+    position: fixed;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+#lupa{
+    margin-left: 5px;
+}

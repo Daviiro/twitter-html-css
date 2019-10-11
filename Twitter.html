@@ -37,7 +37,7 @@
       </div>
 
       <div id="botao">
-         <button class="bt" onclick="alert('tuitado')">Tweet</button>
+         <button class="bt btgrande" onclick="alert('tuitado')">Tweet</button>
       </div>
 
    </div>
@@ -53,10 +53,15 @@
       </div>
 
       <div id="happening">
-         <img id="izaya" width="50px" height="50px" src="icones\izayapic.png" />
-         <input id="caixa" type="text" name="nome" placeholder="O que est&aacute acontecendo?" minlength="5"
-            maxlength="140" pattern="[a-zA-Z]">
-         <img id="tweetpic" width="110px" height="23px" src="icones\3pic.png" />
+         <div id="acontecendo">
+            <img id="izaya" width="50px" height="50px" src="icones\izayapic.png" />
+            <input id="caixa" type="text" name="nome" autocomplete="off" placeholder="O que est&aacute acontecendo?" minlength="5"
+               maxlength="140" pattern="[a-zA-Z]">
+            <img id="tweetpic" width="110px" height="23px" src="icones\3pic.png" />
+         </div>
+         <div id="bot">
+            <button class="bt btpequeno" onclick="alert('tuitado')">Tweet</button>
+         </div>
       </div>
 
       <div id="timeline">
@@ -113,9 +118,12 @@
 
    <div class="ladodireito">
       <div class="direito">
-         <div id="busca">
 
-            <input id="caixaB" type="text" name="nome" placeholder="Buscar no Twitter" pattern="[a-zA-Z]">
+         <div id="buscafixa">
+            <div id="busca">
+               <img id="lupa" src="icones/lupa.png" alt="">
+               <input id="caixaB" type="text" name="nome" autocomplete="off" placeholder="Buscar no Twitter" pattern="[a-zA-Z]">
+            </div>
          </div>
 
          <div id="assuntos">
