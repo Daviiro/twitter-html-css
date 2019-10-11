@@ -14,6 +14,7 @@ body{
 a{
 	text-decoration: none;
 	color: black;
+	padding: 10px;
 }
 
 p{
@@ -194,7 +195,9 @@ p{
 #logo{
     padding: 15px;
 }
-
+#icones{
+    padding: 10px;
+}
 #busca{
     margin-top: 5px;
     margin-bottom: 10px;
