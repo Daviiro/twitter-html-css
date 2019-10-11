@@ -89,7 +89,7 @@ p{
 .postagem{
     display: flex;
     flex-direction: row;
-    padding: 10px 15px;
+    padding: 10px 5px;
     border-bottom: solid;
     border-width: 1px;
     border-bottom-color: rgb(230, 236, 240);
@@ -125,6 +125,10 @@ p{
     margin-left: 490px;
 }
 
+#izaya{
+	margin-top: -30px;
+    margin-left: -430px;
+}
 
 #happening{
     margin-top: 50px;
@@ -149,13 +153,13 @@ p{
     color: rgb(101, 119, 134);
     text-align: left;
 	margin-top: -40px;
-	margin-left: -400px;
+	margin-left: 0px;
 
 }
 
 #tweetpic{
 	margin-top: 45px;
-    margin-left: -415px;
+    margin-left: -413px;
 }
 
 .item{
