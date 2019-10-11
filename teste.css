@@ -41,7 +41,6 @@ p{
     flex-direction: column;
     grid-area: meiohome;
     background-color: rgb(230, 236, 240);
-    height: 10000px;
 }
 
 .menu{
@@ -107,9 +106,6 @@ p{
 #homee{
     grid-area: meiohome;
     position: fixed;
-    font-size: 22px;
-    font-family: Arial;
-    font-weight: bold;
     width: 598px;
     border: solid;
     border-width: 1px;
@@ -118,11 +114,14 @@ p{
     height: 50px;
     background-color: #FFFFFF;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    
 }
 
 #destaquepic{
-    margin-left: 490px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
 }
 
 #izaya{
@@ -248,6 +247,10 @@ p{
 
 #inicio{
     padding: 15px;
+    font-size: 18px;
+	font-family: Arial;
+    font-weight: bold;
+    align-self: flex-start;
 }
 
 
